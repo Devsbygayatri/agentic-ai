@@ -1,4 +1,9 @@
+import os
 import streamlit as st
+
+# Get Gemini key from Streamlit Cloud Secrets
+os.environ["GOOGLE_API_KEY"] = st.secrets["GOOGLE_API_KEY"]
+
 from youtube_analyzer import build_youtube_agent
 
 st.set_page_config(
