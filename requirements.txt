@@ -1,0 +1,7 @@
+streamlit
+agno
+google-genai
+python-dotenv
+duckduckgo-search
+yfinance
+youtube-transcript-api
