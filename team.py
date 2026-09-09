@@ -1,5 +1,5 @@
 from agno.agent import Agent
-from agno.models.google import Gemini
+from agno.models.groq import Groq
 from dotenv import load_dotenv
 from agno.team import Team
 
@@ -12,7 +12,7 @@ hindi_agent = Agent(name="Hindi Agent", role="You answer questions in Hindi")
 team_leader = Team(
     name ="Answe & Transalation Team",
     members = [eng_agent,chi_agent,hindi_agent],
-    model=Gemini(id="gemini-3.6-flash"),
+    model=Groq(id="openai/gpt-oss-120b"),
     markdown=True,
     show_members_responses=True,
     instructions=""" All member agents must respond to answer the query in their specific language. 
